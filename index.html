@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>O.H.H Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="p-6 max-w-4xl mx-auto text-center">
+      <h1 class="text-3xl font-bold mb-4">Welcome to O.H.H</h1>
+      <h2 class="text-xl text-gray-600" id="user-email"></h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-8">
+        <div class="bg-white p-4 rounded shadow">
+          Balance 💰 : <span id="balance">$0.00</span>
+        </div>
+        <div class="bg-white p-4 rounded shadow">History 📜: (coming soon)</div>
+        <div class="bg-white p-4 rounded shadow">Help 💡: (coming soon)</div>
+      </div>
+      <div>
+        <div class="bg-blue-600 p-4  items-center rounded shadow w-[30%] ">Withdraw</div>
+      </div>
+      <div class="bg-white p-6 rounded shadow my-6">
+        <p class="mb-2">Payment Progress: <span id="payment">₦0</span></p>
+        <button id="pay" class="bg-blue-600 text-white py-2 px-4 rounded">
+          Pay ₦100
+        </button>
+      </div>
+
+      <button id="logout" class="mt-6 text-red-600">Logout</button>
+    </div>
+
+    <script type="module" src="homepage.js"></script>
+  </body>
+</html>
