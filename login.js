@@ -11,7 +11,8 @@ loginForm.addEventListener("submit", async (e) => {
 
   try {
     await signInWithEmailAndPassword(auth, email, password);
-    window.location.href = "welcome.html";
+    window.location.href = "homepage.html"; // Redirect to homepage on successful login
+    console.log("User logged in successfully"); // Log success message
     // Redirect to homepage on successful login
   } catch (error) {
     console.error("Error logging in: ", error);
